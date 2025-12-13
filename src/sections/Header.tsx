@@ -1,7 +1,6 @@
 function Header() {
   return (
     <div
-      id="home"
       className="w-full bg-primary h-[120px] flex items-center justify-center !px-4 relative"
     >
       <div className="flex items-center justify-between w-full !max-w-[328px] md:!max-w-full xl:!max-w-[1318px] relative">

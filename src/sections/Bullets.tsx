@@ -5,7 +5,6 @@ export default function Bullets({ title, bullets, paragraph }: BulletsProps) {
 
   return (
     <div
-    id="about"
     className="w-full bg-secondary !pb-20"
   >
     <Container>

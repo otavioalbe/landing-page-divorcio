@@ -11,7 +11,6 @@ export default function Principal() {
 
   return (
     <div
-      id="about"
       className="w-full bg-secondary"
     >
       <Container>
