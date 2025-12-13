@@ -1,65 +1,20 @@
-import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './sections/Header';
-import About from './sections/About';
-import Banner from './sections/Banner';
-import Differences from './sections/Differences';
-import Fields from './sections/Fields';
-import Contact from './sections/Contact';
-import Feedbacks from './sections/Feedbacks';
+import Principal from './sections/Principal';
 import Footer from './sections/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
-import VideosSection from './sections/VideosSection';
-
-function ScrollToSection() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === '/contato') {
-      // Aguarda um pouco para garantir que a página foi renderizada
-      setTimeout(() => {
-        const element = document.getElementById('contact');
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    } else if (location.pathname === '/sobre') {
-      setTimeout(() => {
-        const element = document.getElementById('about');
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    } else if (location.pathname === '/areas-de-atuacao') {
-      setTimeout(() => {
-        const element = document.getElementById('fields');
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    } else if (location.pathname === '/') {
-      // Para a página inicial, rola para o topo
-      setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }, 100);
-    }
-  }, [location.pathname]);
-
-  return null;
-}
+import { subsectionsConstants } from './constants/subsectionsConstants';
+import TextMedia from './components/TextMedia';
+import Bullets from './sections/Bullets';
 
 function MainContent() {
   return (
     <>
-      <ScrollToSection />
       <Header />
-      <Banner />
-      <About />
-      <VideosSection />
-      <Differences />
-      <Fields />
-      <Contact />
-      <Feedbacks />
+      <Principal />
+      <TextMedia {...subsectionsConstants().justica} />
+      <Bullets {...subsectionsConstants().indecisao} />
+      <TextMedia {...subsectionsConstants().resolve} />
+      <TextMedia {...subsectionsConstants().precisao} />
       <Footer />
       <WhatsAppButton />
     </>
@@ -68,15 +23,7 @@ function MainContent() {
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<MainContent />} />
-        <Route path="/contato" element={<MainContent />} />
-        <Route path="/sobre" element={<MainContent />} />
-        <Route path="/areas-de-atuacao" element={<MainContent />} />
-        <Route path="*" element={<MainContent />} />
-      </Routes>
-    </Router>
+    <MainContent />
   );
 }
 
