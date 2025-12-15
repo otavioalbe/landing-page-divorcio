@@ -16,7 +16,7 @@ export default function Principal() {
       <Container>
         <div className="flex flex-col !pt-10">
           <div className="flex flex-col w-full !pb-10">
-            <h1 className="apple-garamond header-1 !text-primary text-center whitespace-pre-line">{content.title}</h1>
+            <h1 className="apple-garamond header-1 !text-primary text-center whitespace-pre-line !pb-4">{content.title}</h1>
             <p className="body-large !mt-4 whitespace-pre-line">{content.paragraph}</p>
           </div>
           <div className="flex-1 flex justify-center items-center">

@@ -169,7 +169,7 @@ body {
 }
 
 .button-primary {
-  width: 400px;
+  align-self: self-start;
   font-size: 1.25rem;
   font-weight: 700;
   background-color: #5A090B;

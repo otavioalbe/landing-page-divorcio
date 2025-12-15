@@ -15,6 +15,10 @@ function MainContent() {
       <Bullets {...subsectionsConstants().indecisao} />
       <TextMedia {...subsectionsConstants().resolve} />
       <TextMedia {...subsectionsConstants().precisao} />
+      <TextMedia {...subsectionsConstants().diagnosticos} />
+      <Bullets {...subsectionsConstants().consulta} />
+      <TextMedia {...subsectionsConstants().custo} />
+      <TextMedia {...subsectionsConstants().futuro} />
       <Footer />
       <WhatsAppButton />
     </>
