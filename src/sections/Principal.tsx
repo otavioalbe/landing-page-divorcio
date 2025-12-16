@@ -6,7 +6,7 @@ export default function Principal() {
   const content = mainSectionConstants();
   const phoneNumber = '5554991184768';
   const message = encodeURIComponent(
-    'Olá! Gostaria de saber mais sobre os serviços jurídicos da Dra. Laura Albuquerque. Poderia me ajudar?'
+    'Olá! Gostaria de consultar sobre divórcio. Poderia me ajudar?'
   );
 
   return (
@@ -20,7 +20,7 @@ export default function Principal() {
             <p className="body-large !mt-4 whitespace-pre-line">{content.paragraph}</p>
           </div>
           <div className="flex-1 flex justify-center items-center">
-            <img src="./assets/images/wallpaper-example.png" alt="imagem" />
+            <img src="./assets/images/laura.jpg" alt="imagem" />
           </div>
         </div>
         <a href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" className="!my-10 !body-large button-primary">{content.button}</a>

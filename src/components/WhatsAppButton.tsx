@@ -8,7 +8,7 @@ function WhatsAppButton() {
   const handleWhatsAppClick = () => {
     const phoneNumber = '5554991184768';
     const message = encodeURIComponent(
-      'Olá! Gostaria de saber mais sobre os serviços jurídicos da Dra. Laura Albuquerque. Poderia me ajudar?'
+      'Olá! Gostaria de consultar sobre divórcio. Poderia me ajudar?'
     );
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
