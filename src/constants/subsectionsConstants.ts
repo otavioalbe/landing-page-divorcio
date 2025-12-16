@@ -61,6 +61,21 @@ export const subsectionsConstants = () => {
         button: 'Quero falar com a Dra. Laura agora!',
     }
 
+    const certificates = [
+        {
+            id: 1,
+            image: "./assets/images/certificado.webp",
+        },
+        {
+            id: 2,
+            image: "./assets/images/certificado.webp",
+        },
+        {
+            id: 3,
+            image: "./assets/images/certificado.webp",
+        },
+     ];
+
   return {
         justica,
         indecisao,
@@ -69,6 +84,7 @@ export const subsectionsConstants = () => {
         diagnosticos,
         consulta,
         custo,
-        futuro
+        futuro,
+        certificates
   };
 };
