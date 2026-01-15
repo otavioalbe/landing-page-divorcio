@@ -3,7 +3,7 @@ export const subsectionsConstants = () => {
     const justica = {
         title: 'A Justiça é técnica. Sem preparo, você fica vulnerável.',
         paragraph: 'Vou ser totalmente clara: o juiz não decide com base em emoções — ele decide com base em documentos. Confiar em acordos informais pode te deixar exposta e sem proteção quando mais precisar. Uma orientação jurídica adequada evita que decisões mal estruturadas sejam usadas contra você no processo.',
-        image: './assets/images/laura.jpg',
+        image: './assets/images/justica.webp',
     }
 
     const indecisao = {
@@ -20,7 +20,7 @@ export const subsectionsConstants = () => {
     const resolve = {
         title: '"A gente resolve depois" é uma das frases mais caras que existem.',
         paragraph: 'Adiar decisões importantes no divórcio não traz alívio — traz custo. Quando faltam orientação e clareza, o desgaste emocional aumenta, o patrimônio se desorganiza e pequenas pendências viram grandes problemas. Se você já sabe que precisa ajustar a sua vida patrimonial, agir no momento certo evita perdas que poderiam ser prevenidas.',
-        image: './assets/images/laura.jpg',
+        image: './assets/images/resolve.webp',
         button: 'Não quero arriscar meu patrimônio',
     }
 
@@ -51,13 +51,12 @@ export const subsectionsConstants = () => {
     const custo = {
         title: 'O verdadeiro custo está em um divórcio mal estruturado.',
         paragraph: 'Uma partilha conduzida sem orientação pode comprometer anos do seu patrimônio. O que pesa não é o atendimento jurídico — é ter que corrigir, lá na frente, decisões tomadas sem clareza. A orientação certa evita prejuízos que poderiam ter sido totalmente evitados.',
-        image: './assets/images/laura.jpg'
+        image: './assets/images/custo.webp'
     }
 
     const futuro = {
         title: 'Decida agora como quer conduzir o seu futuro.',
         paragraph: 'No divórcio, quem se prepara toma decisões mais seguras — quem adia costuma lidar com consequências difíceis depois. Você não precisa passar por isso sem orientação. Se chegou até aqui, este é o momento de agir com estratégia e clareza.',
-        image: './assets/images/laura.jpg',
         button: 'Quero falar com a Dra. Laura agora!',
     }
 
