@@ -10,16 +10,16 @@ export default function Certificates() {
  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="w-full bg-secondary !pb-20">
+    <div className="w-full bg-secondary">
       {isDesktop && (
         <Container>
-          <div className="flex flex-row gap-4 w-full justify-center">
+          <div className="flex flex-row  gap-4 w-full justify-center">
             {certificates.map((certificate) => (
               <img 
                 key={certificate.id}
                 src={certificate.image} 
                 alt="certificado" 
-                className="w-full max-w-[400px] h-auto object-contain cursor-pointer hover:opacity-90 transition-opacity" 
+                className="w-full max-w-[300px] h-auto object-contain cursor-pointer shadow-2xl hover:opacity-70 hover:scale-105 transition-all duration-300" 
                 onClick={() => setSelectedImage(certificate.image)}
               />
             ))}
@@ -37,7 +37,7 @@ export default function Certificates() {
                 key={certificate.id}
                 src={certificate.image} 
                 alt="certificado" 
-                className="w-[280px] h-auto object-contain flex-shrink-0 cursor-pointer"
+                className="w-[280px] h-auto object-contain flex-shrink-0 cursor-pointer hover:opacity-70 hover:scale-105 transition-all duration-300"
                 style={{ scrollSnapAlign: 'start' }}
                 onClick={() => setSelectedImage(certificate.image)}
                 />
@@ -52,10 +52,10 @@ export default function Certificates() {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white text-4xl font-light hover:opacity-70 transition-opacity"
+            className="absolute top-8 right-10 !text-white cursor-pointer"
             onClick={() => setSelectedImage(null)}
           >
-            ×
+            X
           </button>
           <img 
             src={selectedImage} 

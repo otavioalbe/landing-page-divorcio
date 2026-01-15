@@ -5,7 +5,6 @@ import WhatsAppButton from './components/WhatsAppButton';
 import { subsectionsConstants } from './constants/subsectionsConstants';
 import TextMedia from './components/TextMedia';
 import Bullets from './sections/Bullets';
-import Certificates from './components/Certificates';
 
 function MainContent() {
   return (
@@ -20,7 +19,6 @@ function MainContent() {
       <Bullets {...subsectionsConstants().consulta} />
       <TextMedia {...subsectionsConstants().custo} />
       <TextMedia {...subsectionsConstants().futuro} />
-      <Certificates />
       <Footer />
       <WhatsAppButton />
     </>

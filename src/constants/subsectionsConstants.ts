@@ -27,7 +27,6 @@ export const subsectionsConstants = () => {
     const precisao = {
         title: 'Estou aqui para te orientar com precisão.',
         paragraph: 'Sou a Dra. Laura Albuquerque, OAB/SC 67.569B\nMinha trajetória é inteira dedicada ao Direito de Família:\nㅤㅤ• Bacharela em Direito pela PUCRS, com prêmio de Destaque Acadêmico.\nㅤㅤ• Pós-graduada em Direito de Família e Sucessões pela FMP.\nㅤㅤ• Mestre em Direitos Fundamentais pela UNOESC.\nEssa formação me permite atuar com estratégia, clareza e responsabilidade.\nMeu compromisso é garantir que você tome decisões informadas e seguras — sem juridiquês, sem confusão e sem deixar brechas que possam prejudicar seu patrimônio.',
-        image: './assets/images/laura.jpg',
         button: 'Quero o contato da Dra. Laura',
     }
 
@@ -35,7 +34,7 @@ export const subsectionsConstants = () => {
     const diagnosticos = {
         title: 'Como funciona o Diagnóstico: objetivo, claro e sem rodeios.',
         paragraph: 'No diagnóstico, eu avalio a sua situação com transparência e técnica. Identifico onde estão os pontos de atenção, explico os riscos e apresento os caminhos possíveis para proteger o seu patrimônio de forma responsável. Sem promessas irreais, sem ilusão — apenas estratégia, clareza e informação para você decidir com segurança.',
-        image: './assets/images/laura.jpg',
+        videoUrl: 'https://www.youtube.com/embed/VFlTT5F8svs',
         button: 'Quero agendar o meu diagnóstico agora!',
     }
 
@@ -63,16 +62,20 @@ export const subsectionsConstants = () => {
     const certificates = [
         {
             id: 1,
-            image: "./assets/images/certificado.webp",
+            image: "./assets/images/pucrs.webp",
         },
         {
             id: 2,
-            image: "./assets/images/certificado.webp",
+            image: "./assets/images/primeira.webp",
         },
         {
             id: 3,
-            image: "./assets/images/certificado.webp",
+            image: "./assets/images/unoesc.webp",
         },
+        {
+            id: 4,
+            image: "./assets/images/fmp.webp",
+        }
      ];
 
   return {
