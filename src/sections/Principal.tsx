@@ -17,7 +17,7 @@ export default function Principal() {
     >
       <Container>
         <div className="flex flex-col !pt-10">
-          <div className="flex flex-col w-full !pb-10">
+          <div className="flex flex-col w-full md:!pb-10 !pb-4">
             <h1 className="apple-garamond header-1 !text-primary text-center whitespace-pre-line !pb-4">{content.title}</h1>
             <p className="body-large !mt-4 whitespace-pre-line">{content.paragraph}</p>
           </div>
@@ -35,7 +35,7 @@ export default function Principal() {
             </div>
           </div>
         </div>
-        <a href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" className="!my-10 !body-large button-primary hover:scale-105 hover:opacity-90 transition-all duration-300">{content.button}</a>
+        <a href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" className="!mt-8 !mb-4 md:!mt-10 md:!mb-10 !body-large button-primary hover:scale-105 hover:opacity-90 transition-all duration-300">{content.button}</a>
       </Container>
     </div>
   );

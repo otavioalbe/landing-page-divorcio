@@ -38,11 +38,11 @@ export default function TextMedia({ title, paragraph, button, image, videoUrl }:
   return (
     <div
     id="about"
-    className="w-full bg-secondary !pb-20"
+    className="w-full bg-secondary !py-6 md:!py-10"
   >
     <Container>
-        <div className="flex flex-col !pt-10">
-          <div className="flex flex-col w-full !pb-10">
+        <div className="flex flex-col">
+          <div className="flex flex-col w-full lg:!pb-10 !pb-4">
             <h1 className="apple-garamond header-2 !text-primary whitespace-pre-line">{title}</h1>
             <p className="body-large !mt-4 whitespace-pre-line">{paragraph}</p>
           </div>

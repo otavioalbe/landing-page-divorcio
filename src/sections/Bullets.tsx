@@ -5,11 +5,11 @@ export default function Bullets({ title, bullets, paragraph }: BulletsProps) {
 
   return (
     <div
-    className="w-full bg-secondary !pb-10"
+    className="w-full bg-secondary !py-6 md:!py-10"
   >
     <Container>
-        <div className="flex flex-col !pt-10">
-          <div className="flex flex-col w-full !pb-10">
+        <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             <h1 className="apple-garamond header-2 !text-primary whitespace-pre-line">{title}</h1>
             <ul className="list-disc list-inside">
               {bullets.map((bullet, index) => (
