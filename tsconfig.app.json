@@ -24,5 +24,4 @@
     "noUncheckedSideEffectImports": true,
     "noImplicitAny": false
   },
-  "include": ["src", "src/types/swiper.d.ts"]
 }
